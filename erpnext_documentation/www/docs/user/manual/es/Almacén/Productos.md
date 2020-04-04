@@ -1,56 +1,56 @@
 <! - add-breadcrumbs ->
-# Ítem
+# Producto
 
-**Un Ítem es un producto o servicio ofrecido o comprado por su empresa.**
+**Un Producto es un artículo o servicio ofrecido o comprado por su empresa.**
 
-El término Ítem también es aplicable a las materias primas o componentes de productos que aún no se han producido (antes de que puedan venderse a los clientes). ERPNext le permite administrar todo tipo de ítems como materias primas, subconjuntos, productos terminados, variantes de ítems y ítems de servicio.
+El término Producto también es aplicable a las materias primas o componentes de productos que aún no se han producido (antes de que puedan venderse a los clientes). ERPNext le permite administrar todo tipo de productos como materias primas, subconjuntos, productos terminados, variantes de productos y productos de servicio.
 
-ERPNext está optimizado para la gestión detallada de sus ventas y compras. Si está en servicios, puede crear un Ítem para cada servicio que ofrezca. Completar el Item Master es muy esencial para la implementación exitosa de ERPNext.
+ERPNext está optimizado para la gestión detallada de sus ventas y compras. Si está en servicios, puede crear un Ítem para cada servicio que ofrezca. Completar el registro maestro de Productos es fundamental para la implementación exitosa de ERPNext.
 
 Para acceder a la lista de elementos, vaya a:
-> Inicio> Stock> Ítems y precios> Item
+> Inicio > Almacén > Productos y Precios> Productos
 
 ## 1. Requisitos previos
-Antes de crear y usar un elemento, se recomienda que cree primero lo siguiente:
+Antes de crear y usar un producto, se recomienda que cree primero lo siguiente:
 
-* [Grupo de ítems](/docs/user/manual/en/stock/item-group)
+* [Grupo de Productos](/docs/user/manual/en/stock/item-group)
 * [Almacén](/docs/user/manual/en/stock/warehouse)
 * Una unidad de medida si es necesario
 
-## 2. Cómo crear un ítem
+## 2. Cómo crear un Producto
 1. Vaya a la lista de elementos, haga clic en nuevo.
-2. Ingrese un Código de ítem, el nombre se completará automáticamente igual que el Código de ítem al hacer clic dentro del campo Nombre de ítem.
-1. Seleccione un grupo de ítems.
-1. Ingrese las unidades de stock de apertura y la tasa de venta estándar.
-3. Guardar.
-  ![Ítem guardado](/docs/assets/img/stock/item-saved.png)
+2. Ingrese un *Código de Producto*, el nombre se completará automáticamente igual que el Código de Producto al hacer clic dentro del campo Nombre de Producto.
+1. Seleccione un Grupo de Productos.
+1. Ingrese las cantidades de stock iniciales y la tasa de venta estándar.
+3. Grabar.
+  ![Producto guardado](/docs/assets/img/stock/item-saved.png)
 
-### 2.1 Propiedades del ítem
+### 2.1 Propiedades del Producto
 
-  * **Nombre del Ítem:** El nombre del ítem es el nombre real de su producto o servicio.
+  * **Nombre del Producto:** El nombre del producto es el nombre real de su producto o servicio.
   
-  * **Código del Ítem:** El código del ítem es una forma abreviada para denotar su ítem. Si tiene muy pocos ítems, es recomendable mantener el nombre del ítem y el código del ítem. Esto ayuda a los nuevos usuarios a reconocer y actualizar los detalles del ítem en todas las transacciones. En caso de que tenga muchos elementos con nombres largos y la lista se ejecute en cientos, es recomendable codificar. Para comprender los nombres de los códigos de ítems, consulte [Codificación de Ítems](/docs/user/manual/en/stock/articles/item-codification). También puede generar un Código de ítem basado en una [Series de Nombres](/docs/user/manual/en/setting-up/settings/naming-series) habilitando esta función en [Configuración de Almacén](/docs/user/manual/en/stock/stock-settings#1-item-naming-by).
+  * **Código del Producto:** El código del producto es una forma abreviada para denotar su producto. Si tiene muy pocos productos, es recomendable mantener igual el nombre y el código del producto. Esto ayuda a los nuevos usuarios a reconocer y actualizar los detalles del producto en todas las transacciones. En caso de que tenga muchos elementos con nombres largos y la lista se ejecute en cientos, es recomendable codificar. Para comprender los nombres de los códigos de productos, consulte [Codificación de Productos](/docs/user/manual/en/stock/articles/item-codification). También puede generar un *Código de Producto* basado en una [Series de Nombres](/docs/user/manual/en/setting-up/settings/naming-series) habilitando esta función en [Configuración de Almacén](/docs/user/manual/en/stock/stock-settings#1-item-naming-by).
   
-  * **Grupo de Ítems:** Grupo de ítems se utiliza para clasificar un ítem bajo varios criterios como productos, materias primas, servicios, subconjuntos, consumibles o todos los grupos de ítems. Cree su lista predeterminada de Grupo de Ítems en *Configuración > Grupo de Ítems* y preseleccione la opción mientras completa los detalles de su *Nuevo Ítem* en [Grupo de Ítems](/docs/user/manual/en/stock/item-group). Los grupos de ítems pueden ser subconjuntos, materias primas, etc., o según el caso de uso de su empresa.
+  * **Grupo de Productos:** Grupo de ítems se utiliza para clasificar un producto bajo varios criterios como productos, materias primas, servicios, subconjuntos, consumibles o todos los grupos de productos. Cree su lista predeterminada de Grupo de Productos en *Configuración > Grupo de Productos* y preseleccione la opción mientras completa los detalles de su *Nuevo Producto* en [Grupo de Productos](/docs/user/manual/en/stock/item-group). Los grupos de productos pueden ser subconjuntos, materias primas, etc., o según el caso de uso de su empresa.
   
   * **Unidad de Medida Predeterminada**: Esta es la unidad de medida predeterminada que usará para su producto. Pueden ser Nos, Kgs, Metros, etc. Puede almacenar todas las unidades de medida que su producto requerirá en *Configuración > Almacén > Unidad de Medida (UdM) (UOM)*. Estos se pueden preseleccionar mientras se llena un nuevo elemento utilizando el signo % para obtener una ventana emergente de la lista UdM. Visite la página [UdM](/docs/user/manual/en/stock/uom) para obtener más detalles.
 
 ### 2.2 Opciones al crear un elemento
-* **Desactivado**: Si desactiva un Ítem, no puede seleccionarse en ninguna transacción.
+* **Desactivado**: Si desactiva un Producto, no puede seleccionarse en ninguna transacción.
 
-* **Permitir Ítem Alternativo**: A veces, cuando se fabrica un bien terminado, puede que no haya material específico disponible. Si marca esto, puede crear y seleccionar un elemento alternativo de la lista Alternativa de elementos. Para obtener más información, visite la página [Opción Alternativa](/docs/user/manual/en/manufacturing/item-alternative).
+* **Permitir Elemento Alternativo**: A veces, cuando se fabrica un bien terminado, puede que no haya material específico disponible. Si marca esto, puede crear y seleccionar un elemento alternativo de la lista Alternativa de elementos. Para obtener más información, visite la página [Opción Alternativa](/docs/user/manual/en/manufacturing/item-alternative).
 
-* **Mantener Existencias:** Si mantiene existencias de este ítem en su inventario, ERPNext realizará una entrada en el libro mayor para cada transacción de este ítem. Asegúrese de mantener esta opción sin marcar al crear un ítem que no esté en stock (por encargo / ingeniero) o un servicio.
+* **Mantener Existencias:** Si mantiene existencias de este producto en su inventario, ERPNext realizará una entrada en el libro mayor para cada transacción de este producto. Asegúrese de mantener esta opción sin marcar al crear un producto que no esté en inventario (por encargo / ingeniero) o un servicio.
 
-* **Incluir Ítem en Fabricación**: Esto es para ítems de materia prima que se utilizarán para crear productos terminados. Si el ítem es un servicio adicional como 'lavado' que se usará en la lista de materiales, no lo marque.
+* **Incluir Artículo en Fabricación**: Esto es para productos de materia prima que se utilizarán para crear productos terminados. Si el producto es un servicio adicional como 'lavado' que se usará en la lista de materiales, no lo marque.
 
-* **Tasa de Valoración**: hay dos opciones para mantener la valoración de las existencias. FIFO (primero en entrar, primero en salir) y media móvil. Para comprender este tema en detalle, visite [Valoración de ítems, FIFO y promedio móvil](/docs/user/manual/en/stock/articles/item-valuation-fifo-and-moving-average).
+* **Tasa de Valoración**: hay dos opciones para mantener la valoración de las existencias. FIFO (primero en entrar, primero en salir) y media móvil. Para comprender este tema en detalle, visite [Valoración de productos, FIFO y promedio móvil](/docs/user/manual/en/stock/articles/item-valuation-fifo-and-moving-average).
 
-* **Tarifa de Venta Estándar**: al * crear * un ítem, al ingresar un valor para este campo se creará automáticamente un [Precio del ítem](/docs/user/manual/en/stock/item-price) en el backend. Introducir un valor después de que se haya guardado el elemento no funcionará. En este caso, el precio del ítem se crea a partir de cualquier transacción con el ítem. La tasa a la que venderá el ítem. Esto se obtendrá en Pedidos de ventas y Facturas de ventas.
+* **Tarifa de Venta Estándar**: al *crear* un producto, al ingresar un valor para este campo se creará automáticamente un [Precio del Producto](/docs/user/manual/en/stock/item-price) en el backend. Introducir un valor después de que se haya guardado el elemento no funcionará. En este caso, el precio del producto se crea a partir de cualquier transacción con el producto. La tasa a la que venderá el producto. Esto se obtendrá en Pedidos de ventas y Facturas de ventas.
 
 * **Es un Activo Fijo**: marque esta casilla de verificación si este elemento es un activo de la empresa. Consulte el [Módulo de activos](/docs/user/manual/en/asset) para obtener más información.
 
-* **Creación Automática de Activos en la Compra**: si el ítem es un activo de la empresa, marque esta casilla de verificación si desea crear activos automáticamente mientras compra este ítem a través de [Ciclo de compra](/docs/user/manual/en/buying/purchase-order). Consulte la [Página de activos](/docs/user/manual/en/asset/asset) para obtener más información.
+* **Creación Automática de Activos en la Compra**: si el producto es un activo de la empresa, marque esta casilla de verificación si desea crear activos automáticamente mientras compra este producto a través de [Ciclo de compra](/docs/user/manual/en/buying/purchase-order). Consulte la [Página de activos](/docs/user/manual/en/asset/asset) para obtener más información.
 
 * **Porcentaje de Asignación**: esta opción estará disponible solo cuando cree y guarde el elemento. Este es el porcentaje por el cual se le permitirá facturar en exceso o entregar en exceso este Ítem. Si no se configura, seleccionará entre [Configuración de stock](/docs/user/manual/en/stock/stock-settings#3-limit-percent).
 
@@ -58,29 +58,29 @@ Antes de crear y usar un elemento, se recomienda que cree primero lo siguiente:
 
 Para la India:
 
-* **HSN/SAC**: Sistema Armonizado de Nomenclatura (HSN) y Código de Contabilidad de Servicios (SAC) para GST. Estos números están definidos por el gobierno y los diferentes ítems se clasifican en diferentes códigos. Se pueden agregar nuevos códigos HSN si no están presentes en la lista.
-* **Tiene calificación nula o está exento**: para un ítem que está bajo GST, pero no se le aplica ningún impuesto. Por ejemplo: cereales.
-* **No es GST**: para un ítem que no está cubierto por GST. Por ejemplo: gasolina.
+* **HSN/SAC**: Sistema Armonizado de Nomenclatura (HSN) y Código de Contabilidad de Servicios (SAC) para GST. Estos números están definidos por el gobierno y los diferentes productos se clasifican en diferentes códigos. Se pueden agregar nuevos códigos HSN si no están presentes en la lista.
+* **Tiene calificación nula o está exento**: para un producto que está bajo GST, pero no se le aplica ningún impuesto. Por ejemplo: cereales.
+* **No es GST**: para un producto que no está cubierto por GST. Por ejemplo: gasolina.
 
 ## 3. Características
 
 ### 3.1 Marca y descripción
 
 * **Marca**: si tienes más de una marca, guárdalas en Venta> Marca y preselecciona mientras llenas un Nuevo Ítem.
-* **Descripción**: Descripción del ítem. El texto del Código del ítem se obtendrá de forma predeterminada.
-  ![Marca y descripción del ítem](/docs/assets/img/stock/item-brand-description.png)
+* **Descripción**: Descripción del Producto. El texto del Código del Producto se obtendrá de forma predeterminada.
+  ![Marca y descripción del producto](/docs/assets/img/stock/item-brand-description.png)
 
 ### 3.2 Códigos de barras
 
-Los códigos de barras se pueden registrar en Ítems para escanearlos rápidamente y agregarlos en las transacciones. En la tabla de códigos de barras, puede agregar el [código de barras para escanear] de un ítem (/ docs / user / manual / es / stock / articles / track-items-using-barcode). Hay dos tipos de códigos de barras en ERPNext:
+Los códigos de barras se pueden registrar en Ítems para escanearlos rápidamente y agregarlos en las transacciones. En la tabla de códigos de barras, puede agregar el [código de barras para escanear](/docs/user/manual/es/stock/articles/track-items-using-barcode)  de un producto. Hay dos tipos de códigos de barras en ERPNext:
 
-* **EAN**: El número de ítem europeo es un número de 13 dígitos. EAN es utilizado internacionalmente y reconocido por más sistemas POS.
+* **EAN**: El número de producto europeo es un número de 13 dígitos. EAN es utilizado internacionalmente y reconocido por más sistemas POS.
 * **UPC**: el Código de producto universal es un número de 12 dígitos. UPC generalmente se usa solo en EE. UU. Y Canadá.
 
 ### 3.3 Inventario
 
-* **Vida útil en días**: Esto es para un producto [Lote](/docs/user/manual/en/stock/batch). El número de días después de los cuales el lote de producto quedará inutilizable. Por ejemplo, medicamentos.
-* **Fin de vida útil**: para un solo ítem / producto, la fecha después de la cual será completamente inutilizable. Es decir, el ítem será inutilizable en transacciones y fabricación. Por ejemplo, está utilizando cristales de plástico para fabricar ítems durante los próximos 5 años después de los cuales desea usar cuentas de plástico.
+* **Vida Útil en Días**: Esto es para un producto [Lote](/docs/user/manual/en/stock/batch). El número de días después de los cuales el lote de producto quedará inutilizable. Por ejemplo, medicamentos.
+* **Fin de Vida Útil**: para un solo ítem / producto, la fecha después de la cual será completamente inutilizable. Es decir, el ítem será inutilizable en transacciones y fabricación. Por ejemplo, está utilizando cristales de plástico para fabricar ítems durante los próximos 5 años después de los cuales desea usar cuentas de plástico.
 * **Garantía**: para realizar un seguimiento de un período de garantía, es necesario que el ítem esté serializado. Cuando se entrega este ítem, la fecha de entrega y el período de vencimiento se guardan en el maestro del número de serie. A través del número de serie maestro, puede realizar un seguimiento del estado de la garantía.
 
   Un período de garantía es un período de tiempo en el que un producto comprado puede ser devuelto o intercambiado.

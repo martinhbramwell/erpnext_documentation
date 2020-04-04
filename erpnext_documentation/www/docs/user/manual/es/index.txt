@@ -2,3 +2,4 @@ introduction
 accounts
 projects
 education
+Almacén

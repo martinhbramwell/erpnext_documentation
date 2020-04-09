@@ -40,11 +40,11 @@ Antes de crear y usar un producto, se recomienda que cree primero lo siguiente:
 
 * **Permitir Elemento Alternativo**: A veces, cuando se fabrica un bien terminado, puede que no haya material específico disponible. Si marca esto, puede crear y seleccionar un elemento alternativo de la lista Alternativa de elementos. Para obtener más información, visite la página [Opción Alternativa](/docs/user/manual/en/manufacturing/item-alternative).
 
-* **Mantener Existencias:** Si mantiene existencias de este producto en su inventario, ERPNext realizará una entrada en el libro mayor para cada transacción de este producto. Asegúrese de mantener esta opción sin marcar al crear un producto que no esté en inventario (por encargo / ingeniero) o un servicio.
+* **Mantener Existencias:** Si mantiene existencias de este producto en su inventario, ERPNext realizará una entrada en el libro mayor para cada transacción de este producto. Asegúrese de mantener esta opción **no seleccionado** al crear un producto que no esté en inventario (por encargo / ingeniero) o un servicio.
 
 * **Incluir Artículo en Fabricación**: Esto es para productos de materia prima que se utilizarán para crear productos terminados. Si el producto es un servicio adicional como 'lavado' que se usará en la lista de materiales, no lo marque.
 
-* **Tasa de Valoración**: hay dos opciones para mantener la valoración de las existencias. FIFO (primero en entrar, primero en salir) y media móvil. Para comprender este tema en detalle, visite [Valoración de productos, FIFO y promedio móvil](/docs/user/manual/en/stock/articles/item-valuation-fifo-and-moving-average).
+* **Tasa de Valoración**: Hay dos opciones para mantener la valoración de las existencias. *FIFO* (primero en entrar, primero en salir) y *Media Móvil*. Para comprender este tema en detalle, visite [Valoración de productos, FIFO y promedio móvil](/docs/user/manual/en/stock/articles/item-valuation-fifo-and-moving-average).
 
 * **Tarifa de Venta Estándar**: al *crear* un producto, al ingresar un valor para este campo se creará automáticamente un [Precio del Producto](/docs/user/manual/en/stock/item-price) en el backend. Introducir un valor después de que se haya guardado el elemento no funcionará. En este caso, el precio del producto se crea a partir de cualquier transacción con el producto. La tasa a la que venderá el producto. Esto se obtendrá en Pedidos de ventas y Facturas de ventas.
 
